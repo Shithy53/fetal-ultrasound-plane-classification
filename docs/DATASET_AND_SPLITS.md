@@ -2,7 +2,7 @@
 
 ## Source and scope
 
-This project uses the publicly released **FETAL_PLANES_DB** fetal ultrasound image collection (Zenodo record [3904280](https://zenodo.org/records/3904280)). The original dataset acquisition is documented in the historical shared `00_Setup_and_Data_Checks.ipynb`, which prepared both students' projects. That shared notebook is preserved in the project archive, not presented here as a newly executed ultrasound-only setup.
+This project uses the publicly released **FETAL_PLANES_DB** fetal ultrasound image collection (Zenodo record [3904280](https://zenodo.org/records/3904280)). The recorded patient-group assignments, class mapping and audit evidence are preserved as fixed ultrasound study artifacts. The repository notebook `notebooks/00_Ultrasound_Setup_and_Data_Checks.ipynb` supports archive recovery and verification without creating another split or training a model.
 
 The ultrasound task predicts six **standard-plane categories**, not fetal disease status or fetal brain subplane subclasses:
 

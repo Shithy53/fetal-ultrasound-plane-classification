@@ -66,16 +66,18 @@ U2 was **not** evaluated on the held-out TEST. Do not use TEST results for model
 
 Grad-CAM was generated for the selected U1 model on **12 predefined VALIDATION images**, two from each category and from 12 distinct patient groups. The target was MobileNetV2's `out_relu` feature layer. The resulting heatmaps are illustrative model explanations, not proof of anatomically correct or causal decision-making.
 
-## Executed experiment notebooks
+## Repository notebooks
 
-The historical executed notebooks are retained separately and should be added without rewriting their original measured outputs or provenance:
+The project-specific setup utility is provided in `notebooks/00_Ultrasound_Setup_and_Data_Checks.ipynb`. It creates missing ultrasound folders, restores the verified archive when necessary and checks the existing patient-separated manifest. This new utility has no saved execution outputs and must not regenerate the recorded split.
 
-- `U1_Ultrasound_MobileNetV2_Baseline.ipynb`
-- `U2_Ultrasound_EfficientNetB0_Baseline.ipynb`
-- `U_GradCAM_U1_MobileNetV2.ipynb`
-- `U_Final_Test_U1_MobileNetV2.ipynb`
+The following four notebooks preserve the actual executed experiments, Grad-CAM outputs and final evaluation:
 
-The initial dataset preparation was recorded in a **shared historical** `00_Setup_and_Data_Checks.ipynb` notebook. A separate ultrasound-only setup notebook is planned, but must preserve the original patient-aware manifest and acknowledge the shared historical provenance. It must not download, repartition, or retrain the dataset merely to reorganize the repository.
+- `notebooks/U1_Ultrasound_MobileNetV2_Baseline.ipynb`
+- `notebooks/U2_Ultrasound_EfficientNetB0_Baseline.ipynb`
+- `notebooks/U_GradCAM_U1_MobileNetV2.ipynb`
+- `notebooks/U_Final_Test_U1_MobileNetV2.ipynb`
+
+Source code, original outputs and signed model-selection evidence should not be rewritten to imply another training run or TEST evaluation.
 
 Some notebooks assume **Google Colab** and persistent paths under `/content/drive/MyDrive/ICTIU_Final_Projects/`. The saved model checkpoints, raw predictions, datasets and full evidence bundles remain outside GitHub in controlled Google Drive storage. The notebooks are historical execution records, not turnkey instructions to rerun training or held-out TEST.
 

@@ -8,12 +8,13 @@ Notebooks that should exist under `notebooks/`:
 
 | Notebook | Role | Saved-output code cells |
 |---|---|---:|
+| `00_Ultrasound_Setup_and_Data_Checks.ipynb` | Dataset recovery and fixed-manifest verification; new utility | 0/6 (not executed) |
 | `U1_Ultrasound_MobileNetV2_Baseline.ipynb` | Frozen MobileNetV2 baseline, validation | 7/7 |
 | `U2_Ultrasound_EfficientNetB0_Baseline.ipynb` | Frozen EfficientNetB0 baseline, validation | 10/10 |
 | `U_GradCAM_U1_MobileNetV2.ipynb` | U1 Grad-CAM on preselected validation images | 8/8 |
 | `U_Final_Test_U1_MobileNetV2.ipynb` | Previously executed and finalized one-time U1 TEST | 8/8 |
 
-The original **shared** `00_Setup_and_Data_Checks.ipynb` prepared the two separate project datasets and remains archived outside this curated ultrasound notebook sequence. A proposed ultrasound-only derived setup notebook has **not yet been authored**. Such a copy, if later approved, must reuse the fixed manifest and cite this original preparation rather than silently producing a new split.
+The setup notebook is specifically written for this fetal ultrasound study and is separate from the four executed experiment notebooks. It creates missing project folders, reuses the existing audited patient-separated manifest and verifies saved dataset records. If the dataset ZIP is missing, it can retrieve the original Zenodo release, subject to checksum validation. It does not regenerate patient assignments or reproduce completed training and TEST execution.
 
 ## Recorded execution environment
 
@@ -58,7 +59,6 @@ These SHA-256 values identify the original executed notebook files as uploaded t
 | U2 baseline | `e6fcadd1a08341372710a0f3bc18cd4444d56b63527acf7d1a5027661d24334a` |
 | U1 Grad-CAM | `be3fd19fc6d6ef70f9b80bfdc55b7d4faa90c4d67057e55b68afd2cf72af5ac5` |
 | U1 final TEST | `e691872a44ec4ae83a0f22fa93edce3c27353e60f76e538db84b8f2a6eb49f10` |
-| Original shared data setup (archived) | `2fb9624d36ff129edbc27b6ca7ec917e20e93e1f1e06b550b16884b039a158a5` |
 
 ## Safety and attribution
 
