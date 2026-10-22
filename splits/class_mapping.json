@@ -1,0 +1,8 @@
+{
+  "Fetal abdomen": 0,
+  "Fetal brain": 1,
+  "Fetal femur": 2,
+  "Fetal thorax": 3,
+  "Maternal cervix": 4,
+  "Other": 5
+}
