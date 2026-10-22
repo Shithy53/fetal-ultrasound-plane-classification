@@ -1,0 +1,10 @@
+{
+  "status": "TEST_INFERENCE_COMPLETED",
+  "completed_at_utc": "2026-10-19T00:10:16.649847+00:00",
+  "test_images_scored": 5271,
+  "predictions_sha256": "76dc5e76f5d58c125b1020eab7e8029f1c56389b2326d44f6eefc0bd8f66e9e1",
+  "test_order_sha256": "da93cb45f9cab66a7abc498fc116f7200253d4067b3a2c59a23fdffc170060f8",
+  "checkpoint_sha256": "5154c6d97685c2ef39d3ba040a409443cc0f261e070ca627c24b940979b897ae",
+  "no_training": true,
+  "no_test_based_tuning": true
+}

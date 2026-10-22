@@ -1,0 +1,22 @@
+{
+  "report_status": "FINAL_HELD_OUT_TEST_EVALUATED_ONCE",
+  "partition": "TEST",
+  "completed_at_utc": "2026-10-19T00:10:16.649847+00:00",
+  "report_generated_at_utc": "2026-10-19T00:11:49.960220+00:00",
+  "protocol_file": "ultrasound/selection/U1_final_test_protocol_2026-10-19.json",
+  "protocol_sha256": "42f3ec9c0461b6c8f18f263c58460bc042fe8640f9b607f7e5c00f9f7d951cd3",
+  "freeze_file": "ultrasound/selection/U1_model_selection_freeze_2026-10-19.json",
+  "freeze_sha256": "0a7b55da27a85e7c39e9552e4b7c17bee342d0859fbe656f83caa7888362b539",
+  "model_sha256": "5154c6d97685c2ef39d3ba040a409443cc0f261e070ca627c24b940979b897ae",
+  "configuration_sha256": "5fc6acb0f70ee4b1fe9efdbdf33f5c95779841ec2eb904d786e33fd266809dff",
+  "manifest_sha256": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+  "mapping_sha256": "26ec8f0a94d29d3756f36c52f02ddaad0d953403c0cd3d3903a243547d693428",
+  "archive_md5": "2a5fcc2cefb789bcc0f6c1f73e0ea43f",
+  "test_order_sha256": "da93cb45f9cab66a7abc498fc116f7200253d4067b3a2c59a23fdffc170060f8",
+  "predictions_sha256": "76dc5e76f5d58c125b1020eab7e8029f1c56389b2326d44f6eefc0bd8f66e9e1",
+  "test_images": 5271,
+  "test_patient_groups": 896,
+  "training_performed": false,
+  "model_selection_or_tuning_on_test": false,
+  "notes": "Original official patient-disjoint held-out test. Only one frozen U1 inference pass. No external-site or clinical validation."
+}

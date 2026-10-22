@@ -1,0 +1,15 @@
+{
+  "partition": "TEST",
+  "experiment": "U_Final_Test_U1_seed42",
+  "selected_model": "U1_MobileNetV2_frozen_seed42",
+  "n_images": 5271,
+  "n_patient_groups": 896,
+  "accuracy": 0.8542970973249858,
+  "macro_precision": 0.8189828352186893,
+  "macro_recall": 0.8603140469218582,
+  "macro_f1": 0.8345279068164659,
+  "n_correct": 4503,
+  "n_errors": 768,
+  "source_predictions_sha256": "76dc5e76f5d58c125b1020eab7e8029f1c56389b2326d44f6eefc0bd8f66e9e1",
+  "no_post_test_tuning": true
+}
