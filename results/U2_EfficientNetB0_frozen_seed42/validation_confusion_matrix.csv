@@ -1,0 +1,7 @@
+true_class,Fetal abdomen,Fetal brain,Fetal femur,Fetal thorax,Maternal cervix,Other
+Fetal abdomen,62,0,2,2,0,5
+Fetal brain,1,319,2,5,0,4
+Fetal femur,2,0,106,0,0,4
+Fetal thorax,11,1,2,214,0,2
+Maternal cervix,0,0,0,0,216,0
+Other,13,7,57,51,1,222

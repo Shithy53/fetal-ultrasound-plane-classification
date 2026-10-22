@@ -1,0 +1,28 @@
+{
+  "original_manifest_sha256": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+  "images_per_split": {
+    "train": 5818,
+    "validation": 1311,
+    "test": 5271
+  },
+  "patients_per_split": {
+    "train": 716,
+    "validation": 180,
+    "test": 896
+  },
+  "unique_patients": 1792,
+  "patients_spanning_splits": 0,
+  "recorded_cross_split_exact_duplicates": 0,
+  "split_unit": "patient identifier",
+  "source_test_images_decoded": false,
+  "archive_md5": "2a5fcc2cefb789bcc0f6c1f73e0ea43f",
+  "train_validation_images_available": 7129,
+  "held_out_test_images_extracted_by_this_notebook": 0,
+  "verified_train_validation_image_bytes": 7129,
+  "cross_partition_train_val_duplicate_hashes": 0,
+  "restored_hashes_match_manifest": true,
+  "input_pixel_range": [
+    0,
+    255
+  ]
+}

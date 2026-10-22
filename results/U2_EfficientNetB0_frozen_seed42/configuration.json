@@ -1,0 +1,92 @@
+{
+  "notebook": "03_Ultrasound_EfficientNetB0_Baseline.ipynb",
+  "notebook_revision": "2026-10-19-u2-v1",
+  "run_name": "U2_EfficientNetB0_frozen_seed42",
+  "experiment": "U2 ImageNet EfficientNetB0 frozen feature extractor",
+  "reference_experiment": "U1_MobileNetV2_frozen_seed42",
+  "reference_source": "PROJECT_HANDOFF_2026-10-19_UPDATED.md and reviewed U1 notebook",
+  "dataset": "FETAL_PLANES_DB, Zenodo record 3904280",
+  "grouping_unit": "patient identifier (group_id)",
+  "class_to_id": {
+    "Fetal abdomen": 0,
+    "Fetal brain": 1,
+    "Fetal femur": 2,
+    "Fetal thorax": 3,
+    "Maternal cervix": 4,
+    "Other": 5
+  },
+  "class_names": [
+    "Fetal abdomen",
+    "Fetal brain",
+    "Fetal femur",
+    "Fetal thorax",
+    "Maternal cervix",
+    "Other"
+  ],
+  "images_per_split": {
+    "train": 5818,
+    "validation": 1311,
+    "test": 5271
+  },
+  "patients_per_split": {
+    "train": 716,
+    "validation": 180,
+    "test": 896
+  },
+  "manifest_sha256": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+  "source_sha256": {
+    "manifest": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+    "mapping": "26ec8f0a94d29d3756f36c52f02ddaad0d953403c0cd3d3903a243547d693428",
+    "audit": "d1416de8befb379f4ad368805fed002c0beacb1b2a2e59c7891891b6a054e99a"
+  },
+  "archive_md5": "2a5fcc2cefb789bcc0f6c1f73e0ea43f",
+  "source_paths": {
+    "archive": "/content/drive/MyDrive/ICTIU_Final_Projects/ultrasound/archives/FETAL_PLANES_ZENODO.zip",
+    "manifest": "/content/drive/MyDrive/ICTIU_Final_Projects/ultrasound/splits/manifest_candidate.csv",
+    "mapping": "/content/drive/MyDrive/ICTIU_Final_Projects/ultrasound/splits/class_mapping.json",
+    "audit": "/content/drive/MyDrive/ICTIU_Final_Projects/ultrasound/results/audit.json"
+  },
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "float32",
+  "input_pixel_range": [
+    0,
+    255
+  ],
+  "resize": "tf.image.resize_with_pad (default bilinear; same as U1)",
+  "scaling_inside_model": "EfficientNetB0 built-in ImageNet preprocessing (Rescaling)",
+  "external_preprocessing": "none",
+  "backbone": "EfficientNetB0",
+  "weights": "imagenet",
+  "include_top": false,
+  "backbone_trainable": false,
+  "backbone_call_training": false,
+  "head": "GlobalAveragePooling2D -> Dropout(0.2) -> Dense(6, softmax)",
+  "trainable_parameters": 7686,
+  "total_parameters": 4057257,
+  "dropout": 0.2,
+  "batch_size": 16,
+  "seed": 42,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "SparseCategoricalCrossentropy",
+  "class_weights": {
+    "0": 3.438534278959811,
+    "1": 0.752262735971037,
+    "2": 2.40016501650165,
+    "3": 1.1710950080515299,
+    "4": 1.2675381263616559,
+    "5": 0.43096296296296294
+  },
+  "augmentation": "none (as in U1)",
+  "fine_tuning": false,
+  "grad_cam": false,
+  "max_epochs": 6,
+  "early_stopping_patience": 2,
+  "monitor": "val_loss",
+  "checkpoint_mode": "min",
+  "held_out_test_used": false
+}

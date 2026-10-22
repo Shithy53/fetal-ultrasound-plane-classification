@@ -1,0 +1,74 @@
+{
+  "run_name": "U2_EfficientNetB0_frozen_seed42",
+  "evaluation_split": "validation",
+  "n_images": 1311,
+  "n_patient_ids": 180,
+  "best_epoch_1_based": 5,
+  "epochs_completed": 6,
+  "validation_loss": 0.35212242603302,
+  "accuracy": 0.8688024408848207,
+  "macro_f1": 0.8507392458711359,
+  "weighted_f1": 0.8673531799830934,
+  "class_names": [
+    "Fetal abdomen",
+    "Fetal brain",
+    "Fetal femur",
+    "Fetal thorax",
+    "Maternal cervix",
+    "Other"
+  ],
+  "confusion_matrix_rows_true_columns_predicted": [
+    [
+      62,
+      0,
+      2,
+      2,
+      0,
+      5
+    ],
+    [
+      1,
+      319,
+      2,
+      5,
+      0,
+      4
+    ],
+    [
+      2,
+      0,
+      106,
+      0,
+      0,
+      4
+    ],
+    [
+      11,
+      1,
+      2,
+      214,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      216,
+      0
+    ],
+    [
+      13,
+      7,
+      57,
+      51,
+      1,
+      222
+    ]
+  ],
+  "checkpoint_sha256": "b13d3601e03a34b452b4af284b1fbfad316790fe6d8be4c7d69aaf1537e8280a",
+  "grouping_unit": "patient identifier",
+  "held_out_test_evaluated": false,
+  "softmax_scores_calibrated": false
+}

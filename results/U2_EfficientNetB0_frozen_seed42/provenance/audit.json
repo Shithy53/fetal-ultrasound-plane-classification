@@ -1,0 +1,32 @@
+{
+  "project": "ultrasound",
+  "status": "PASS_candidate_split_checks",
+  "images": 12400,
+  "classes": [
+    "Fetal abdomen",
+    "Fetal brain",
+    "Fetal femur",
+    "Fetal thorax",
+    "Maternal cervix",
+    "Other"
+  ],
+  "unique_groups": 1792,
+  "groups_per_split": {
+    "test": 896,
+    "train": 716,
+    "validation": 180
+  },
+  "images_per_split": {
+    "train": 5818,
+    "test": 5271,
+    "validation": 1311
+  },
+  "group_overlap": 0,
+  "unreadable_images": 0,
+  "cross_split_exact_duplicate_hashes": 0,
+  "split_seed": 42,
+  "manifest_sha256": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+  "source_note": "FETAL_PLANES_DB Zenodo 3904280; official test retained; validation from training patients only.",
+  "limitation": "Checks do not prove all biological dependencies were recovered. No model has been trained.",
+  "recorded_utc": "2026-10-16T14:26:02.095308+00:00"
+}

@@ -1,0 +1,14 @@
+VALIDATION ONLY - not a final test result
+
+                 precision    recall  f1-score   support
+
+  Fetal abdomen     0.6966    0.8732    0.7750        71
+    Fetal brain     0.9755    0.9637    0.9696       331
+    Fetal femur     0.6272    0.9464    0.7544       112
+   Fetal thorax     0.7868    0.9304    0.8526       230
+Maternal cervix     0.9954    1.0000    0.9977       216
+          Other     0.9367    0.6325    0.7551       351
+
+       accuracy                         0.8688      1311
+      macro avg     0.8364    0.8911    0.8507      1311
+   weighted avg     0.8904    0.8688    0.8674      1311

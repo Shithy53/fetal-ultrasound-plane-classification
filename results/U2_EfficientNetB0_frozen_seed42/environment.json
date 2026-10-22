@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-18T19:39:25.734257+00:00",
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "tensorflow": "2.21.0",
+  "gpu": "Tesla T4, 15360 MiB",
+  "keras_float_policy": "float32",
+  "seed": 42,
+  "tensorflow_op_determinism_requested": false,
+  "packages": {
+    "keras": "3.13.2",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "Pillow": "11.3.0",
+    "tqdm": "4.67.3"
+  }
+}
