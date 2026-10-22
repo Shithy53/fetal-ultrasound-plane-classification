@@ -1,0 +1,87 @@
+{
+  "experiment": "U_GradCAM_U1_validation_seed42",
+  "project": "Explainable Transfer Learning Framework for Fetal Ultrasound Standard Plane Classification",
+  "created_at_utc": "2026-10-18T23:24:13.850029+00:00",
+  "evaluation_partition": "validation",
+  "held_out_test_pixels_accessed": false,
+  "new_model_training_performed": false,
+  "selected_model": "U1_MobileNetV2_frozen_seed42",
+  "model_sha256": "5154c6d97685c2ef39d3ba040a409443cc0f261e070ca627c24b940979b897ae",
+  "manifest_sha256": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+  "class_mapping_sha256": "26ec8f0a94d29d3756f36c52f02ddaad0d953403c0cd3d3903a243547d693428",
+  "freeze_file": "ultrasound/selection/U1_model_selection_freeze_2026-10-19.json",
+  "freeze_sha256": "0a7b55da27a85e7c39e9552e4b7c17bee342d0859fbe656f83caa7888362b539",
+  "image_preprocessing": "tf.io.decode_image RGB; tf.image.resize_with_pad 224x224; float32 [0,255]; model internal Rescaling",
+  "gradcam_layer": "MobileNetV2/out_relu (7x7)",
+  "attribution_target": "predicted-class pre-softmax logit",
+  "cam_computation": "mean spatial gradients -> channel weighting -> ReLU -> bilinear resize -> [0,1] scaling",
+  "head_inference_check": "Reconstructed logits/softmax compared with frozen full-model inference per image, tolerance 1e-5",
+  "historical_prediction_comparison": "12/12 labels matched U1 validation_predictions.csv",
+  "selection_rule": "two images per class, lowest SHA-256 of seed|relative_path, no duplicate selected patient group",
+  "selection_seed": "U1_gradcam_validation_seed42_v1",
+  "selection_made_before_predictions": true,
+  "selection": [
+    {
+      "relative_path": "Images/Patient01106_Plane2_1_of_2.png",
+      "class_id": 0,
+      "selection_hash": "019eaafef244ac1036d9c0da393c8a2fb7cbdde168e738e2c192c00082ea3a2a"
+    },
+    {
+      "relative_path": "Images/Patient01023_Plane2_1_of_1.png",
+      "class_id": 0,
+      "selection_hash": "01cb16bf5cee9a1a00b00e6ec2cb605f21ac9ab9f68e83f3263c8487b47a95e4"
+    },
+    {
+      "relative_path": "Images/Patient01032_Plane3_3_of_3.png",
+      "class_id": 1,
+      "selection_hash": "00ce94855b37a9899e78fefa106c90f13a34d2f72a781c4f789a50b724eaf29e"
+    },
+    {
+      "relative_path": "Images/Patient00844_Plane3_4_of_4.png",
+      "class_id": 1,
+      "selection_hash": "010c09a0ad4878fb202bbc4e8c67b5e96dc1da4ec8a3783155b2b08decf519b7"
+    },
+    {
+      "relative_path": "Images/Patient01112_Plane5_1_of_2.png",
+      "class_id": 2,
+      "selection_hash": "00e1d3698e89c2f98d24752309522378bed219f186985f29272e66243e865ed3"
+    },
+    {
+      "relative_path": "Images/Patient00956_Plane5_1_of_1.png",
+      "class_id": 2,
+      "selection_hash": "02670eb77b0948e63fe293e768782c563a0b87de984e4aec56e7cf703855afd1"
+    },
+    {
+      "relative_path": "Images/Patient00756_Plane6_5_of_6.png",
+      "class_id": 3,
+      "selection_hash": "017f44697eefa792d4dc4ea3f845035ce7b9eec0a65b4a42262247019e319192"
+    },
+    {
+      "relative_path": "Images/Patient00823_Plane6_5_of_6.png",
+      "class_id": 3,
+      "selection_hash": "02cf36471537a0df17d54492d90cdae278dd56ffb2ebe536276ea6e91b0c8b9f"
+    },
+    {
+      "relative_path": "Images/Patient00830_Plane4_6_of_6.png",
+      "class_id": 4,
+      "selection_hash": "002fd218c17e27f5bb088686e6dd118c0f99b912b67722af81f70959f3d58bcf"
+    },
+    {
+      "relative_path": "Images/Patient01025_Plane4_2_of_3.png",
+      "class_id": 4,
+      "selection_hash": "05c1905474b4d3ad1480bc439080942eae5571989669f1858397a924549b168c"
+    },
+    {
+      "relative_path": "Images/Patient00856_Plane1_1_of_12.png",
+      "class_id": 5,
+      "selection_hash": "018e0a8faac0ba6558bda54f23fd9d7f8194b1bd549c9ff71aa14d09677b5a7a"
+    },
+    {
+      "relative_path": "Images/Patient00789_Plane1_46_of_64.png",
+      "class_id": 5,
+      "selection_hash": "02c15c6360fa640d2c480b1d7b7c4b03339ee56b2fe787e2eb49349c721645df"
+    }
+  ],
+  "clinical_interpretation": "Illustrative attribution only; not diagnosis, segmentation, causal explanation, or external validation.",
+  "report_publication_note": "Do not publicly distribute underlying images or identifiable metadata without permission."
+}
