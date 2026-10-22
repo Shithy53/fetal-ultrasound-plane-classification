@@ -1,0 +1,30 @@
+{
+  "model": "MobileNetV2",
+  "pretraining": "ImageNet",
+  "backbone_frozen": true,
+  "input_image_size": [
+    224,
+    224
+  ],
+  "preprocessing": "resize_with_pad; rescale image [0,255] to [-1,1] in model",
+  "training_augmentation": "none",
+  "dropout": 0.2,
+  "batch_size": 16,
+  "epochs_requested": 6,
+  "epochs_finished": 4,
+  "optimizer": "Adam",
+  "initial_learning_rate": 0.001,
+  "seed": 42,
+  "class_weights": {
+    "0": 3.438534278959811,
+    "1": 0.752262735971037,
+    "2": 2.40016501650165,
+    "3": 1.1710950080515299,
+    "4": 1.2675381263616559,
+    "5": 0.43096296296296294
+  },
+  "manifest_sha256": "ef6fec1a70e80a0b7ed34c990ebac2918ddc8a81dcef300aa244ce6ab1a5e1e0",
+  "started_at_utc": "2026-10-16T18:58:47.315132+00:00",
+  "finished_at_utc": "2026-10-16T19:01:40.021461+00:00",
+  "test_used_for_model_selection": false
+}
