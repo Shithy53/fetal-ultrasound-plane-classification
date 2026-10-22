@@ -1,0 +1,7 @@
+class_name,train,validation,test
+Fetal abdomen,282,71,358
+Fetal brain,1289,331,1472
+Fetal femur,404,112,524
+Fetal thorax,828,230,660
+Maternal cervix,765,216,645
+Other,2250,351,1612
